@@ -4,10 +4,11 @@ output: html_notebook
 author: Your Name
 ---
 
-This lab covers: Calculator & Objects, Numeric Vectors, Logical Vectors, Subsetting, For loops, If statements
+This lab covers: Calculator & Objects, Numeric Vectors, Logical Vectors, Subsetting, `For` loops, `If` statements
 
 
-We can ask for input from a user in R by using the funciton "readline." For example, the code below creates a custom function called "ask" that asks for a name (saved as the variable `z`) then prints "Hello <name>!"
+We can ask for input from a user in R by using the function `readline()`. For example, the code below creates a custom function called `ask()` that asks for a name (saved as the variable `z`) then prints "Hello <name>!"
+  
 ```{r}
 ask <- function(){
   z <- readline("Enter your name: ")
@@ -18,7 +19,8 @@ ask()
 ```
 
 
-1. Ask for a positive number and return a vector of all the integers between 1 and the input. For example, if the user picks 5, your code should return `1 2 3 4 5`
+1. Ask for a positive number and return a vector of all the integers between 1 and the input. For example, if the user picks 5, your code should return `1 2 3 4 5`.
+
 ```{r}
 ask <- function(){
   num <- readline("Enter a number: ")
@@ -30,6 +32,7 @@ ask()
 
 
 2. Ask for a number and return a vector of all the even numbers between 1 and the input. Hint: You can do this with a loop, or you can try reading about the function `seq()` by typing `?seq()` into the console.
+
 ```{r}
 ask <- function(){
   num <- readline("Enter a number: ")
@@ -42,6 +45,7 @@ ask()
 
 
 3. Ask for a positive integer n. Return the sum: 1 + 1∕2 + 1∕3 + 1∕4 + ⋯ + 1∕n. Hint: learn about the `sum()` function.
+
 ```{r}
 ask <- function(){
   num <- readline("Enter a number: ")
@@ -53,7 +57,8 @@ ask()
 ```
 
 
-4. Ask for a positive integer n. Return a vector with elements: 1, 1/2, 1/3, 1/4, ... , 1/n.
+4. Ask for a positive integer `n`. Return a vector with elements: `1, 1/2, 1/3, 1/4, ... , 1/n`.
+
 ```{r}
 ask <- function(){
   num <- readline("Enter a number: ")
@@ -66,6 +71,7 @@ ask()
 
 
 5. Using the vectors provided, ask for a number and print the name of the person at that index, and whether or not they like cake.
+
 ```{r}
 people <- c("Alice", "Bob", "Charlie", "David", "Eve")
 likesCake <-  c(TRUE, FALSE, TRUE, TRUE, FALSE)
@@ -88,6 +94,7 @@ ask()
 
 
 6. Ask for a start and end, then return all elements of the provided vector between those indices.
+
 ```{r}
 vector <- c("red", "orange", "yellow", "green", "blue", "purple")
 ask <- function(){
@@ -101,6 +108,7 @@ ask()
 
 
 7. Ask the user for 5 numbers and add them one by one to a vector.
+
 ```{r}
 ask <- function(){
   vector <-  c()
@@ -127,7 +135,8 @@ print(sumFive)
 ```
 
 
-9. Ask for the total of a bill and return the amount of a 15% tip. The `round` function is useful for cleaning up the result to an even penny. Use `?round` to see the help documentation.
+9. Ask for the total of a bill and return the amount of a 15% tip. The `round()` function is useful for cleaning up the result to an even penny. Use `?round` to see the help documentation.
+
 ```{r}
 ask <- function(){
   num <- readline("Enter total: $")
@@ -161,6 +170,7 @@ ask()
 
 
 12. The factorial of an integer is the product of all the positive integers less than or equal to it. For example, the factorial of 4 is equal to 4 ∗ 3 ∗ 2 ∗ 1=24. There is a function factorial in base R for calculating these. Ask for a number and return the factorial, without using the R function. Hint: The function `prod` may be helpful.
+
 ```{r}
 ask <- function(){
    # your code here
@@ -169,7 +179,8 @@ ask()
 ```
 
 
-13. Let's play a game! Randomly pick a number between 1 and 10, then give the user 3 attempts to guess correctly. Your game should tell the user when they've won, if they guessed wrong and should try again, or if they've lost. Hint: you'll need the function `sample`. Use `?sample` to learn about it! You'll also want to use `break` to stop your loop when they win.
+13. Let's play a game! Randomly pick a number between 1 and 10, then give the user 3 attempts to guess correctly. Your game should tell the user when they've won, if they guessed wrong and should try again, or if they've lost. Hint: you'll need the function `sample()`. Use `?sample` to learn about it! You'll also want to use `break()` to stop your loop when they win.
+
 ```{r}
 play <- function(){
    # your code here
@@ -180,6 +191,7 @@ play()
 
 
 BONUS CHALLENGE. Re-write your game to pick a number between 1 and 20, give them 5 guesses, and give hints like "warmer" or "colder" after each guess.
+
 ```{r}
 play <- function(){
   # your code here
